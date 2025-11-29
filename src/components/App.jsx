@@ -1,11 +1,9 @@
 
 import './App.css';
-import Home from '../Pages/Home.jsx';
-import Products from '../Pages/Products.jsx';
-import About from '../Pages/About.jsx';
+import AppRoutes from '../Routes.jsx';
 
 const App = () => {
-  let component;
+  
 
   // switch (window.location.pathname) {
   //case '/':
