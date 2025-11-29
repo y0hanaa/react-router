@@ -1,9 +1,10 @@
 
 import './App.css';
 import AppRoutes from '../Routes.jsx';
+import { Link } from 'react-router-dom';
 
 const App = () => {
-  
+
 
   // switch (window.location.pathname) {
   //case '/':
@@ -21,19 +22,19 @@ const App = () => {
   return (
     <>
       <header>
-        <a href="/">Logo</a>
+        <Link to='/'>Logo</Link>
         <nav>
           <ul>
             <li>
-              <a href="/products">Products</a>
+              <Link to='/products'>Products</Link>
             </li>
             <li>
-              <a href="/about">About</a>
+              <Link to='/about'>About</Link>
             </li>
           </ul>
         </nav>
       </header>
-      {component}
+      <AppRoutes />
     </>
   );
 }
